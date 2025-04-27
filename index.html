@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bird Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">Bird Explorer</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<section id="home" class="home">
+  <h1>Find Beautiful Bird Images</h1>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="Enter bird name...">
+    <button id="search-button">Search</button>
+  </div>
+  <div id="image-gallery" class="gallery"></div>
+</section>
+<section id="services" class="services">
+  <h1>Our Services</h1>
+  <div class="services-list">
+    <div class="service-card">
+      <h2>Bird Image Search</h2>
+      <p>Instantly find beautiful images of any bird you love!</p>
+    </div>
+    <div class="service-card">
+      <h2>Educational Resources</h2>
+      <p>Learn about various bird species while browsing images.</p>
+    </div>
+    <div class="service-card">
+      <h2>Free Access</h2>
+      <p>All our features are completely free to use — forever!</p>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <h1>Contact Us</h1>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+<footer>
+  <p>Made with ❤️ by Bird Explorer Team</p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
