@@ -3,6 +3,7 @@ const accessKey = "y-YDKlq4eY5Ku-B7K2-vUzrBeFeX00rWltyO9xF2pnA";
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-input');
 const gallery = document.getElementById('image-gallery');
+const themeToggleButton = document.getElementById('theme-toggle');
 
 searchButton.addEventListener('click', () => {
   const query = searchInput.value.trim();
@@ -30,3 +31,12 @@ async function fetchImages(query) {
     console.error(error);
   }
 }
+
+themeToggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    themeToggleButton.textContent = 'Switch to Light Theme';
+  } else {
+    themeToggleButton.textContent = 'Switch to Dark Theme';
+  }
+});
